@@ -3,6 +3,7 @@
         "ostream": "cpp",
         "*.tcc": "cpp",
         "cmath": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "string_view": "cpp"
     }
 }
