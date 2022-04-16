@@ -12,25 +12,27 @@ int main ()
     cout<<"Enter (int) s"<<endl;
     cin>>s;
     float tochki[s+1]; //на отрезках n частей получается n+1 точек промежутка (*-*-*-*)
-    cout<<"Tochki: ";
+    cout<<endl<<"Table (koordinata tochki, sin, cos)"<<endl;
+
+    cout<<"Tochki: |"; //по условию нужны заголовки строки или заголовки столбца??
     for (int i = 0; i<(s+1); i++) 
     {
         tochki[i]=a+i*((b-a)/s); //abs не нужен
-        cout<<fixed<<setprecision(2)<<tochki[i]<<" | ";
+        cout<<fixed<<setprecision(2)<<setw(9)<<tochki[i]<<" | ";
     }
      cout<<endl;
-     cout<<"Sin   : ";
+     cout<<"Sin   : |";
     for (int i = 0; i<(s+1); i++) 
     {
       //  tochki[i]=a+i*((b-a)/s); //abs не нужен
-        cout<<fixed<<setprecision(2)<<sin(tochki[i])<<" | ";
+        cout<<fixed<<setprecision(2)<<setw(9)<<sin(tochki[i])<<" | ";
     }
        cout<<endl;
-     cout<<"Cos   : ";
+     cout<<"Cos   : |";
     for (int i = 0; i<(s+1); i++) 
     {
       //  tochki[i]=a+i*((b-a)/s); //abs не нужен
-        cout<<fixed<<setprecision(2)<<cos(tochki[i])<<" | ";
+        cout<<fixed<<setprecision(2)<<setw(9)<<cos(tochki[i])<<" | ";
     }
  //   length=2*M_PI*r;
   //  cout<<"Length of circle = "<<length;
