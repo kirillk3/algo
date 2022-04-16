@@ -23,7 +23,7 @@ int main ()
     //r радиус вписанной окружности, равен площадь треугольника разделить на полупериметр
     r=s/(p/2);
     length=2*M_PI*r;
-    scircle=M_PI*pow(r,2);
+    scircle=M_PI*pow(r,2); 
     cout<<"Length of circle l= "<<length<<endl;
     cout<<"Area of circle S= "<<scircle;
 
